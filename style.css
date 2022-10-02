@@ -1,74 +1,88 @@
-body {
-		margin: 0;
-    font-size: 10pt;
-    background-color: #F5EFE6;
-    font-family: "Poppins", sans-serif;
-}
-
-.container {
-	margin-bottom: 5em;
-	overflow: auto;
-}
-.topnav {
-	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-	background-color: #7895B2;
-	overflow: hidden;
-}
-
-.textbox {
-	display: flex;
-	background-color: #E6D8C2;
-	overflow: hidden;
-	border-radius: 20px;
-}
-h1 {
-	margin: 12px;
-}
-h2 {
-	margin: 12px;
-}
-p {
-  font-family: "Poppins", sans-serif;
-	margin: 12px;
-	font-size: 11pt
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
+* {
 	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.topnav li a {
-	display: inline-block;
-	float: left;
-  font-family: "Poppins", sans-serif;
-	color: white;
+main {
+	background-color: #d4f1f4;
+}
+
+.contentbox {
+	overflow-wrap: break-word;
+	background-color: #fff;
 	text-align: center;
-	padding: 12px;
+	margin: 10px;
+	padding-left: 15px;
+	max-width: 300px;
+	min-height: 100px;
+	border-radius: 5px;
+}
+
+.navbar {
+	background-color: #189ab4;
+	display: flex;
+	flex-wrap: wrap;
+  box-shadow: 0 1px 10px grey;
+	align-items: center;
+}
+
+a {
+	color: white;
 	text-decoration: none;
-	font-size: 17px;
 }
 
-.topnav a:hover {
-	background-color: #AEBDCA;
-	color: white;
-	
-}
-
-.topnav a.active {
-	background-color: #AEBDCA;
-	color: white;
-}
-
-.footer {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-  font-family: "Poppins", sans-serif;
-	background-color: #7895B2;
-	color: white;
-	width: 100%;
+li {
+	transition: all 0.5s ease-in-out;
+	display: inline-flex;
+	padding: 15px;
+	margin: 0;
 	text-align: center;
+}
+
+.navbar li:hover {
+	background-color: #05445e;
+}
+
+.footer-col li:hover {
+	opacity: 1;
+}
+
+.footer-col li {
+	padding: 0 11px;
+	opacity: 0.75;
+}
+
+.footer-col h4 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.footer-col li {
+	font-size: 15px;
+	display: block;
+	font-weight: 300;
+}
+.footer-col {
+	margin: 10px;
+  padding: 0 15px;
+	width: 25%;
+	text-align: center;
+}
+
+.footer p {
+	text-align: center;
+	display: inline
+}
+.footer {	
+	background: #05445e;
+	color: #fff;
+	justify-content: center;
+	display: flex;
+	margin-top: 5%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	flex-wrap: wrap;
 }
